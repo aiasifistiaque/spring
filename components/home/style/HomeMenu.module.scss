@@ -1,0 +1,103 @@
+//
+
+.homeMenu {
+	$brown: #886955;
+	$pad: 5%;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 10%;
+	background-color: white;
+	margin-top: -50px;
+	padding: 5% 10%;
+	box-sizing: border-box;
+	box-shadow: 0 0 25px rgba(black, 0.2);
+	border-radius: 5px;
+
+	h1 {
+		font-size: 3em;
+		padding: 0 $pad;
+		color: $brown;
+	}
+	p {
+		font-size: 0.8em;
+		padding: 0 $pad;
+		color: lighten(black, 40);
+	}
+	.sections {
+		margin: 2em 0;
+
+		h3 {
+			width: 50%;
+			background-color: $brown;
+			color: white;
+			padding: 0.5em $pad;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			font-size: 1.5em;
+			font-weight: 400;
+		}
+
+		.sectionitem {
+			padding: 1em $pad;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			p {
+				padding: 0;
+				font-size: 1em;
+				font-weight: 500;
+				letter-spacing: 1px;
+			}
+			.sectionitemnames {
+				width: 50%;
+
+				P {
+					padding: 0;
+					font-size: 1em;
+					color: rgba(black, 0.5);
+					letter-spacing: 1px;
+				}
+			}
+			h5 {
+				font-size: 1.3em;
+				text-transform: uppercase;
+				margin: 0.5em 0;
+				letter-spacing: 2px;
+				font-weight: 500;
+			}
+		}
+	}
+	.button {
+		background-color: $brown;
+		display: inline-flex;
+		height: 50px;
+		width: 250px;
+		align-items: center;
+		justify-content: center;
+		align-self: center;
+		margin: 1em 0;
+		cursor: pointer;
+		&:hover {
+			background-color: darken($brown, 10);
+		}
+		a {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			color: white;
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			letter-spacing: 2px;
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+	}
+	@media only screen and(max-width:800px) {
+		margin: 0;
+		box-shadow: none;
+		width: 100%;
+	}
+}

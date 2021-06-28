@@ -1,0 +1,16 @@
+//@extend
+
+@mixin btn-text-unselect {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+$desktop: 840px;
+
+@mixin desktop {
+	@media (min-width:#{$desktop}) {
+		@content;
+	}
+}

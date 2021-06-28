@@ -1,0 +1,13 @@
+Fonts used in this design:
+
+Font: Bebas Neue
+Author: Fontfabric
+Url: http://www.fontsquirrel.com/fonts/bebas-neue
+
+Font: Josefin Sans
+Author: Typemade
+Url: http://www.fontsquirrel.com/fonts/josefin-sans
+
+Font: Metropolis
+Author: Chris Simpson
+Url: https://www.fontsquirrel.com/fonts/metropolis

@@ -1,0 +1,9 @@
+//@extend
+
+.page {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}

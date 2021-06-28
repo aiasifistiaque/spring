@@ -1,0 +1,103 @@
+//
+@import '../../styles/utilities/mixin';
+$nav-padding: 0 5%;
+.navbar {
+	display: flex;
+	@include desktop {
+		display: inline-flex;
+	}
+
+	width: 100%;
+	justify-content: space-between;
+	height: 10vh;
+	min-height: 50px;
+	align-items: center;
+	max-width: 100vw;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	letter-spacing: 2px;
+
+	.navbrand {
+		padding: $nav-padding;
+		cursor: pointer;
+
+		a {
+			@include btn-text-unselect;
+			font-size: 1.6em;
+			text-transform: uppercase;
+			font-weight: 600;
+			letter-spacing: -5px;
+		}
+	}
+
+	.navRight {
+		$bgc: rgba(darkslateblue, 0.8);
+		display: flex;
+		background-color: $bgc;
+		padding: $nav-padding;
+		height: 100%;
+		align-items: center;
+		color: white;
+		font-size: 0.9em;
+		@include btn-text-unselect;
+		cursor: pointer;
+		text-transform: uppercase;
+		&:hover {
+			background-color: darken($bgc, 10);
+		}
+	}
+
+	.navcollapseStraight {
+		padding: $nav-padding;
+		@include btn-text-unselect;
+		cursor: pointer;
+		transition: 0.5s;
+	}
+
+	.navitemsSmall {
+		display: flex;
+		position: fixed;
+		height: 100vh;
+		width: 300px;
+		background-color: whitesmoke;
+		flex-direction: column;
+		z-index: 9;
+		top: 0;
+		left: 0;
+		padding: 25px 0;
+		box-sizing: border-box;
+		align-items: flex-start;
+		max-height: 100vh;
+		box-shadow: 10px 10px 5px rgba(black, 0.1);
+		flex: 1;
+		overflow-y: scroll;
+		overflow-x: hidden;
+
+		.navCloseBtn {
+			background-color: whitesmoke;
+			padding: 10px 12px;
+			border-radius: 100px;
+			cursor: pointer;
+			margin: 5px 5%;
+			margin-bottom: 25px;
+			align-self: flex-end;
+		}
+
+		a {
+			display: flex;
+			flex: 1;
+			width: 100%;
+			@include btn-text-unselect;
+			padding: 25px 40px;
+			white-space: nowrap;
+			cursor: pointer;
+			border-top: 2px solid rgba(black, 0.05);
+			align-items: center;
+			font-weight: 600;
+
+			&:hover {
+				background-color: white;
+			}
+		}
+	}
+}

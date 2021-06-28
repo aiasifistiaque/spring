@@ -1,0 +1,69 @@
+//
+@import '../../styles/utilities/mixin';
+
+.navbar {
+	display: flex;
+	height: 4em;
+	align-items: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.1s;
+	background-color: white;
+}
+
+.navbrand {
+	flex: 1;
+	padding: 0 10%;
+	a {
+		cursor: pointer;
+	}
+}
+
+.navitems {
+	display: flex;
+	justify-content: flex-end;
+	flex: 2;
+	padding: 0 10%;
+	transition: 1s;
+
+	.navcollapse {
+		cursor: pointer;
+		@include btn-text-unselect;
+	}
+
+	a {
+		display: inline;
+		cursor: pointer;
+		padding: 0.5em 1em;
+		margin: 0.5em;
+		border: 2px solid transparent;
+		transition: all 0.2s;
+		white-space: nowrap;
+		font-size: 0.8em;
+		font-weight: 600;
+
+		&:hover {
+			border-right: 2px solid black;
+			border-left: 2px solid black;
+		}
+	}
+}
+
+.smallscreenitems {
+	position: absolute;
+	top: 4em;
+	width: 100%;
+	height: 90vh;
+	background-color: rgba(white, 0.5);
+	backdrop-filter: blur(20px);
+	display: flex;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	a {
+		margin: 2em;
+		cursor: pointer;
+	}
+}
